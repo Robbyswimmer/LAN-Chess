@@ -69,3 +69,5 @@ At this point you should be ready to start playing. Both clients should be conne
 Have fun!
 
 Note: You only have to go through the first steps if you are the computer hosting the server, if you are just connecting to the server all you have to do is connect using the IP of the other computer. 
+
+![LAN Chess](/images/chess-pic2.png)
