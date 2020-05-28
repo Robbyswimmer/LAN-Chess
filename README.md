@@ -62,7 +62,7 @@ When a player makes a move, that move is sent to the server where the board is u
   
 * Open another terminal window and navigate to the same directory
   * Type 'Javac ChessClient.java' to compile the client code
-  * Next type 'Java ChessClient IP-of-target-computer Your-username' – Ex. "Java ChessClient 127.0.0.1 person1". If you use 127.0.0.1 you can play both clients on one computer, you will just have to open a third terminal window.
+  * Next type 'Java ChessClient IP-of-target-computer Your-username' – example: "Java ChessClient 127.0.0.1 person1". If you use 127.0.0.1 you can play both clients on one computer, you will just have to open a third terminal window.
   
 At this point you should be ready to start playing. Both clients should be connected to the computer and whoever is playing 'white' should be able to make the first move. 
 
