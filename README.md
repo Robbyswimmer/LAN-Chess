@@ -1,5 +1,5 @@
 # LAN Chess
-This project allows two computers on the same LAN network to play Chess against each other through the command line.
+This project allows two computers on the same network to play a fulle game of Chess against each other through the command line.
 
 ![LAN Chess](/images/chess-pic.png)
 
