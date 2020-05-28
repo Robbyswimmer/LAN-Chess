@@ -11,6 +11,7 @@ The server handles the following:
 * Updating the board with user moves 
 * Telling each player when it is their turn
 * Determining if someone has won the game
+* Keep track of how long the game has been going on
 * Creating the board and transforming it from a string to an array of bytes
 * Sending the board to the correct player
 
@@ -31,5 +32,9 @@ When a player makes a move, that move is sent to the server where the board is u
 * Open another terminal window and navigate to the same directory
   * Type 'Javac ChessClient.java' to compile the client code
   * Next type 'Java ChessClient IP-of-target-computer Your-username' – Ex. "Java ChessClient 127.0.0.1 person1". If you use 127.0.0.1 you can play both clients on one computer, you will just have to open a third terminal window.
+  
+At this point you should be good to go. Both clients should be connected to the computer and whoever is playing 'white' should be able to go ahead and make the first move. 
+
+Have fun!
 
 Note: You only have to go through the first steps if you are the computer hosting the server, if you are just connecting to the server all you have to do is connect using the IP of the other computer. 
