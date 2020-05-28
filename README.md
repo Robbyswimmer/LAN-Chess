@@ -1,5 +1,16 @@
 # LAN-Chess
-This is a LAN multiplayer chess game that is played on the command line. Uses Java.net for networking features.
+This project allows two computers on the same LAN network to play Chess against each other through the command line.
+
+![LAN Chess]()
+Format: ![Screenshot of Game](url)
+
+## How to use
+
+* Download the zip for this project
+* Unzip the package
+* Open Terminal or your favored command line
+* Play
+
 
 
 TEST TEST
