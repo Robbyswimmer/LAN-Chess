@@ -15,7 +15,7 @@ The server handles the following:
 * Creating the board and transforming it from a string to an array of bytes
 * Sending the board to the correct player
 
-To handle player moves a hash map is used. The keys of this map respond to the alphanumeric index of that spot on the chess board. Thus there are 64 indices in the hash table – a1 to h8. The values of the map respond to the piece that is being stored at that index. Given that there are only 32 pieces in a game of chess, there is at least 32 empty spaces on the board at all times. Empty spaces are just stored as empty strings in the map, and when a piece is captured its place in the map is replaced with an empty string so that it is not included in the next iteration of the board. 
+To handle player moves a hash map is used. The keys of this map respond to the alphanumeric index of that spot on the chess board. Thus there are 64 indices in the hash table – a1 to h8. The values of the map respond to the piece that is being stored at that index. All 64 positions are created by attaching a char to an integer and converting it to a string. This is done as a pre-processing measure for all 64 positions on the board.
 
 ```java
 private static String[] createPositions(String[] positions) {
@@ -28,6 +28,20 @@ private static String[] createPositions(String[] positions) {
             }
         }
         return positions;
+    }
+```
+Given that there are only 32 pieces in a game of chess, there is at least 32 empty spaces on the board at all times. Empty spaces are just stored as empty strings in the map, and when a piece is captured its place in the map is replaced with an empty string so that it is not included in the next iteration of the board. 
+
+```java
+public static void updateBoard(HashMap boardMap, String nextMove) {
+        String pos1 = nextMove.substring(0, 2);
+        String pos2 = nextMove.substring(3, 5); //assuming input is in the form "a3 a5" etc
+
+        boardMap.remove(pos2);
+        boardMap.put(pos2, boardMap.get(pos1));
+
+        boardMap.remove(pos1);
+        boardMap.put(pos1, "");
     }
 ```
 
