@@ -21,7 +21,7 @@ Checking for a winner in chess can be very difficult, so in order to improve on 
 
 When a player makes a move, that move is sent to the server where the board is updated with the new move and then the board is converted into a string, and then finally into an array of bytes so that the operation time of the server is maintained. Initially, the chess board was being sent over the server as an actual object, but the performance of that was poor and the current solution of creating the board as a string was found to be much better.
 
-## How to use
+## How to play
 
 * Download the zip file for this project
 * Unzip the package
