@@ -1,7 +1,7 @@
 # LAN-Chess
 This project allows two computers on the same LAN network to play Chess against each other through the command line.
 
-![LAN Chess](https://github.com/Robbyswimmer/LAN-Chess/blob/master/images/chess-pic.png)
+![LAN Chess](https://github.com/Robbyswimmer/LAN-Chess/blob/master/images/chess-pic2.png)
 
 ## How it works
 
@@ -22,11 +22,14 @@ When a player makes a move, that move is sent to the server where the board is u
 
 ## How to use
 
-* Download the zip for this project
+* Download the zip file for this project
 * Unzip the package
 * Open Terminal or your favored command line
-* Play
+** Navigate to the directory that containes the Java files
+** Type 'Javac ChessServer.java' to compile the server code
+** Next type 'Java ChessServer <Your Port Here>' which will launch the server -> You can use any port that is open on your computer. Once you have started the server nothing will appear until you connect a client.
+* Open another terminal window and navigate to the same directory
+  ** Type 'Javac ChessClient.java' to compile the client code
+  ** Next type 'Java ChessClient <IP of target computer> <Your username>' -> Ex. Java ChessClient 127.0.0.1 person1 -> If you use 127.0.0.1 you can use both clients on one computer, you will just have to open a third terminal window.
 
-
-
-TEST TEST
+Note: You only have to go through the first steps if you are the computer hosting the server, if you are just connecting to the server all you have to do is connect using the IP of the other computer. 
