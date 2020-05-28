@@ -17,7 +17,7 @@ The server handles the following:
 
 To handle player moves a hash map is used. The keys of this map respond to the alphanumeric index of that spot on the chess board. Thus there are 64 indices in the hash table – a1 to h8. The values of the map respond to the piece that is being stored at that index. Given that there are only 32 pieces in a game of chess, there is at least 32 empty spaces on the board at all times. Empty spaces are just stored as empty strings in the map, and when a piece is captured its place in the map is replaced with an empty string so that it is not included in the next iteration of the board. 
 
-'''java
+```java
 private static String[] createPositions(String[] positions) {
         int counter = 0;
         for (int i = 1; i <= 8; i++) {
@@ -29,7 +29,7 @@ private static String[] createPositions(String[] positions) {
         }
         return positions;
     }
-'''
+```
 
 Checking for a winner in chess can be very difficult, so in order to improve on this, a winner is declared when the opposing king has been captured. 
 
