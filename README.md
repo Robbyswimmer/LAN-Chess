@@ -1,8 +1,9 @@
 # LAN-Chess
 This project allows two computers on the same LAN network to play Chess against each other through the command line.
 
-![LAN Chess]()
-Format: ![Screenshot of Game](url)
+![LAN Chess](https://github.com/Robbyswimmer/LAN-Chess/blob/master/images/chess-pic.png)
+
+## How it works
 
 ## How to use
 
