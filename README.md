@@ -57,12 +57,12 @@ When a player makes a move, that move is sent to the server where the board is u
 
 * Open Terminal or your favorite command line tool
   * Navigate to the directory that containes the Java files
-  * Type 'Javac ChessServer.java' to compile the server code
-  * Next type 'Java ChessServer Your-Port-Here>' which will launch the server. You can use any port that is open on your computer. Once you have started the server nothing will appear until you connect a client.
+  * Type `javac ChessServer.java` to compile the server code
+  * Next type `java ChessServer <Your-Port-Here>` which will launch the server. You can use any port that is open on your computer. Once you have started the server nothing will appear until you connect a client.
   
 * Open another terminal window and navigate to the same directory
-  * Type 'Javac ChessClient.java' to compile the client code
-  * Next type 'Java ChessClient IP-of-target-computer Your-username' – example: "Java ChessClient 127.0.0.1 person1". If you use 127.0.0.1 you can play both clients on one computer, you will just have to open a third terminal window.
+  * Type `javac ChessClient.java` to compile the client code
+  * Next type `java ChessClient <IP-of-target-computer> <Your-username>` – example: `java ChessClient 127.0.0.1 person1`. If you use 127.0.0.1 you can play both clients on one computer, you will just have to open a third terminal window.
   
 At this point you should be ready to start playing. Both clients should be connected to the computer and whoever is playing as white should be able to make the first move. 
 
