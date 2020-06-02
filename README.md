@@ -1,5 +1,5 @@
 # LAN Chess
-Allows two computers to to connect to the same LAN server and play a full game of Chess against each other.
+Allows two computers to to connect to the same LAN server and play a full game of Chess against each other on the command line.
 
 ![LAN Chess](/images/chess-pic.png)
 
